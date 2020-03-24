@@ -20,6 +20,9 @@
     "node": ">=10.0.0"
   },
   "scripts": {
+    "release": "git push && release-it --github.release --npm.publish --non-interactive",
+    "release:minor": "git push && release-it --github.release --npm.publish --non-interactive --increment minor",
+    "release:major": "git push && release-it --github.release --npm.publish --non-interactive --increment major",
     "check": "yarn run lint && yarn test",
     "lint": "eslint . --max-warnings 0 --format codeframe",
     "test": "jest"
