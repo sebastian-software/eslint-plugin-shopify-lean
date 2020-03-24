@@ -4,9 +4,7 @@
   "description": "Shopify’s ESLint rules and configs.",
   "keywords": [
     "eslint",
-    "eslintconfig",
     "eslintplugin",
-    "eslint-config",
     "eslint-plugin"
   ],
   "author": "Shopify",
@@ -18,9 +16,6 @@
   },
   "scripts": {
     "check": "yarn run lint && yarn test",
-    "rules-status": "eslint-index tests/enable-all-configs.js --format table",
-    "rules-omitted": "eslint-index tests/enable-all-configs.js --status omitted",
-    "find-rules": "eslint-find-rules ./lib/config/all.js",
     "lint": "eslint . --max-warnings 0 --format codeframe",
     "prettier": "eslint --format codeframe . --fix",
     "prettier-check": "eslint --print-config ./lib/config/prettier.js | eslint-config-prettier-check",
@@ -29,7 +24,7 @@
   "license": "MIT",
   "babel": {
     "presets": [
-      "shopify"
+      "@babel/env"
     ]
   },
   "bugs": {
@@ -57,20 +52,15 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
     "@babel/register": "7.9.0",
     "@babel/runtime-corejs2": "^7.9.2",
-    "babel-preset-shopify": "^21.0.0",
     "chai": "^4.2.0",
     "eslint": "^6.7.2",
-    "eslint-find-rules": "^3.4.0",
-    "eslint-index": "^1.5.0",
     "eslint-plugin-self": "^1.2.0",
-    "graphql": "^14.6.0",
-    "istanbul": "^0.4.5",
     "jest": "^25.1.0",
     "prettier": "^2.0.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "typescript": "^3.8.3"
   },
   "peerDependencies": {
