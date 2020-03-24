@@ -9,7 +9,7 @@
   ],
   "author": "Shopify",
   "engines": {
-    "node": ">=8.10.0"
+    "node": ">=10.0.0"
   },
   "publishConfig": {
     "access": "public"
@@ -40,17 +40,17 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
-    "@babel/register": "7.9.0",
-    "@babel/runtime-corejs2": "^7.9.2",
-    "chai": "^4.2.0",
+    "babel-jest": "^25.1.0",
     "eslint": "^6.7.2",
+    "eslint-plugin-react": "^7.19.0",
     "jest": "^25.1.0",
     "prettier": "^2.0.2",
     "react": "^16.13.1",
     "typescript": "^3.8.3"
   },
   "peerDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0"
   },
   "dependencies": {
     "@typescript-eslint/parser": "^2.25.0",
@@ -59,8 +59,6 @@
     "common-tags": "^1.8.0",
     "eslint-import-resolver-node": "^0.3.3",
     "eslint-module-utils": "^2.5.2",
-    "eslint-plugin-react": "^7.19.0",
-    "merge": "1.2.1",
     "pkg-dir": "4.2.0",
     "pluralize": "^8.0.0"
   }
