@@ -7,6 +7,10 @@
     "eslintplugin",
     "eslint-plugin"
   ],
+  "files": [
+    "lib/",
+    "index.js"
+  ],
   "author": {
     "name": "Sebastian Software",
     "email": "s.werner@sebastian-software.de",
