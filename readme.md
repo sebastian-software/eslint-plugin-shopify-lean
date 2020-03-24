@@ -20,12 +20,12 @@ Install `eslint-plugin-shopify`:
 
 **With Yarn**
 ```bash
-yarn add --dev eslint-plugin-shopify
+yarn add --dev eslint-plugin-shopify-lean
 ```
 
 **With npm**
 ```bash
-$ npm install eslint-plugin-shopify --save-dev
+$ npm install eslint-plugin-shopify-lean --save-dev
 ```
 
 ## Plugin-Provided Rules
