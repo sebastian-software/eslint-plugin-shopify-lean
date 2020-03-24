@@ -25,7 +25,7 @@
     "release:major": "git push && release-it --github.release --npm.publish --non-interactive --increment major",
     "check": "yarn run lint && yarn test",
     "lint": "eslint . --max-warnings 0 --format codeframe",
-    "test": "jest"
+    "test": "jest jsx-no-hardcoded"
   },
   "license": "MIT",
   "babel": {
