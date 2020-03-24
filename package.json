@@ -17,8 +17,6 @@
   "scripts": {
     "check": "yarn run lint && yarn test",
     "lint": "eslint . --max-warnings 0 --format codeframe",
-    "prettier": "eslint --format codeframe . --fix",
-    "prettier-check": "eslint --print-config ./lib/config/prettier.js | eslint-config-prettier-check",
     "test": "jest"
   },
   "license": "MIT",
@@ -32,17 +30,6 @@
   },
   "homepage": "https://github.com/Shopify/eslint-plugin-shopify",
   "repository": "https://github.com/Shopify/eslint-plugin-shopify",
-  "eslintConfig": {
-    "plugins": [
-      "self"
-    ],
-    "extends": [
-      "plugin:self/esnext",
-      "plugin:self/node",
-      "plugin:self/prettier",
-      "plugin:self/jest"
-    ]
-  },
   "jest": {
     "testPathIgnorePatterns": [
       "/node_modules/",
@@ -57,7 +44,6 @@
     "@babel/runtime-corejs2": "^7.9.2",
     "chai": "^4.2.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-self": "^1.2.0",
     "jest": "^25.1.0",
     "prettier": "^2.0.2",
     "react": "^16.13.1",
