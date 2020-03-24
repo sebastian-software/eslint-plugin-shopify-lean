@@ -1,6 +1,6 @@
 {
-  "name": "eslint-plugin-shopify-lean-lean",
-  "version": "35.1.0",
+  "name": "eslint-plugin-shopify-lean",
+  "version": "1.0.0",
   "description": "Trimmed down version of Shopify’s ESLint rules.",
   "keywords": [
     "eslint",

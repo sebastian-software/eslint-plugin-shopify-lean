@@ -1,7 +1,16 @@
-# Tiny ESLint Plugin Shopify
+# Lean ESLint Plugin Shopify<br/>[![Sponsored by][sponsor-img]][sponsor] [![Version][npm-version-img]][npm] [![Downloads][npm-downloads-img]][npm] [![Build Status Unix][travis-img]][travis] [![Build Status Windows][appveyor-img]][appveyor] [![Dependencies][deps-img]][deps]
 
-[npm-url]: https://npmjs.org/package/eslint-plugin-shopify
-[npm-image]: http://img.shields.io/npm/v/eslint-plugin-shopify.svg?style=shield
+[sponsor]: https://www.sebastian-software.de
+[deps]: https://david-dm.org/sebastian-software/eslint-plugin-shopify-lean
+[npm]: https://www.npmjs.com/package/@effective/eslint-config
+[travis]: https://travis-ci.org/sebastian-software/eslint-plugin-shopify-lean
+[appveyor]: https://ci.appveyor.com/project/swernerx/eslint-plugin-shopify-lean/branch/master
+[sponsor-img]: https://badgen.net/badge/Sponsored%20by/Sebastian%20Software/692446
+[deps-img]: https://badgen.net/david/dep/sebastian-software/eslint-plugin-shopify-lean
+[npm-downloads-img]: https://badgen.net/npm/dm/@effective/eslint-config
+[npm-version-img]: https://badgen.net/npm/v/@effective/eslint-config
+[travis-img]: https://badgen.net/travis/sebastian-software/eslint-plugin-shopify-lean?label=unix%20build
+[appveyor-img]: https://badgen.net/appveyor/ci/swernerx/eslint-plugin-shopify-lean?label=windows%20build
 
 [![NPM version][npm-image]][npm-url]
 
@@ -51,3 +60,10 @@ This plugin provides the following custom rules, which are included as appropria
 - [typescript/prefer-pascal-case-enums](docs/rules/typescript/prefer-pascal-case-enums.md): Prefer TypeScript enums be defined using Pascal case.
 - [typescript/prefer-singular-enums](docs/rules/typescript/prefer-singular-enums.md): Prefer TypeScript enums be singular.
 - [webpack/no-unnamed-dynamic-imports](docs/rules/webpack/no-unnamed-dynamic-imports.md): Require that all dynamic imports contain a `webpackChunkName` comment.
+
+## Copyright
+
+<img src="https://cdn.rawgit.com/sebastian-software/sebastian-software-brand/0d4ec9d6/sebastiansoftware-en.svg" alt="Logo of Sebastian Software GmbH, Mainz, Germany" width="460" height="160"/>
+
+Copyright 2018-2020<br/>[Shopify](https://www.shopify.com)
+Copyright 2020<br/>[Sebastian Software GmbH](http://www.sebastian-software.de)
