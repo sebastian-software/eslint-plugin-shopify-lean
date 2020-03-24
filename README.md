@@ -5,7 +5,7 @@
 
 [![NPM version][npm-image]][npm-url]
 
-A rule-only fork of [Shopify’s ESLint rules and configs](https://github.com/Shopify/eslint-plugin-shopify)
+A rule-only fork (as of v35.1.0) of [Shopify’s ESLint rules and configs](https://github.com/Shopify/eslint-plugin-shopify)
 
 ## Installation
 
