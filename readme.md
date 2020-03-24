@@ -12,8 +12,6 @@
 [travis-img]: https://badgen.net/travis/sebastian-software/eslint-plugin-shopify-lean?label=unix%20build
 [appveyor-img]: https://badgen.net/appveyor/ci/swernerx/eslint-plugin-shopify-lean?label=windows%20build
 
-[![NPM version][npm-image]][npm-url]
-
 A rule-only fork (as of v35.1.0) of [Shopify’s ESLint rules and configs](https://github.com/Shopify/eslint-plugin-shopify)
 
 ## Installation
