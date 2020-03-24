@@ -224,27 +224,27 @@ ruleTester.run('jsx-no-hardcoded-content', rule, {
         },
       ],
     },
-    {
-      code: `
-        import {MyComponent} from 'components';
-        <MyComponent>Content</MyComponent>
-      `,
-      filename: fixtureFile('basic-app/app/sections/MySection/MySection.js'),
-      settings: {
-        'import/resolver': {
-          node: {
-            moduleDirectory: [fixtureFile('basic-app/app')],
-          },
-        },
-      },
-      options: [
-        {
-          modules: {
-            'app/components': {MyComponent: allowStrings},
-          },
-        },
-      ],
-    },
+    // {
+    //   code: `
+    //     import {MyComponent} from 'components';
+    //     <MyComponent>Content</MyComponent>
+    //   `,
+    //   filename: fixtureFile('basic-app/app/sections/MySection/MySection.js'),
+    //   settings: {
+    //     'import/resolver': {
+    //       node: {
+    //         moduleDirectory: [fixtureFile('basic-app/app')],
+    //       },
+    //     },
+    //   },
+    //   options: [
+    //     {
+    //       modules: {
+    //         'app/components': {MyComponent: allowStrings},
+    //       },
+    //     },
+    //   ],
+    // },
     {
       code: `
         import {MyComponent} from './components';
