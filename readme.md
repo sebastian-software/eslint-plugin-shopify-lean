@@ -65,5 +65,5 @@ This plugin provides the following custom rules, which are included as appropria
 
 <img src="https://cdn.rawgit.com/sebastian-software/sebastian-software-brand/0d4ec9d6/sebastiansoftware-en.svg" alt="Logo of Sebastian Software GmbH, Mainz, Germany" width="460" height="160"/>
 
-Copyright 2018-2020<br/>[Shopify](https://www.shopify.com)
+Copyright 2018-2020<br/>[Shopify](https://www.shopify.com)<br/><br/>
 Copyright 2020<br/>[Sebastian Software GmbH](http://www.sebastian-software.de)
