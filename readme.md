@@ -52,8 +52,6 @@ This plugin provides the following custom rules, which are included as appropria
 - [react-prefer-private-members](docs/rules/react-prefer-private-members.md): Prefer all non-React-specific members be marked private in React class components.
 - [react-type-state](docs/rules/react-type-state.md): Require that React component state be typed in TypeScript.
 - [restrict-full-import](docs/rules/restrict-full-import.md): Prevent importing the entirety of a package.
-- [sinon-no-restricted-features](docs/rules/sinon-no-restricted-features.md): Restrict the use of specified sinon features.
-- [sinon-prefer-meaningful-assertions](docs/rules/sinon-prefer-meaningful-assertions.md): Require the use of meaningful sinon assertions through sinon.assert or sinon-chai.
 - [strict-component-boundaries](docs/rules/strict-component-boundaries.md): Prevent module imports between components.
 - [typescript/prefer-pascal-case-enums](docs/rules/typescript/prefer-pascal-case-enums.md): Prefer TypeScript enums be defined using Pascal case.
 - [typescript/prefer-singular-enums](docs/rules/typescript/prefer-singular-enums.md): Prefer TypeScript enums be singular.
@@ -62,5 +60,5 @@ This plugin provides the following custom rules, which are included as appropria
 
 <img src="https://cdn.rawgit.com/sebastian-software/sebastian-software-brand/0d4ec9d6/sebastiansoftware-en.svg" alt="Logo of Sebastian Software GmbH, Mainz, Germany" width="460" height="160"/>
 
-Copyright 2018-2020<br/>[Shopify](https://www.shopify.com)<br/><br/>
+Copyright 2016-2020<br/>[Shopify](https://www.shopify.com)<br/><br/>
 Copyright 2020<br/>[Sebastian Software GmbH](http://www.sebastian-software.de)
