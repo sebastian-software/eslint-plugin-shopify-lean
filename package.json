@@ -46,22 +46,22 @@
     "collectCoverage": false
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
-    "@typescript-eslint/parser": "^2.29.0",
-    "babel-jest": "^25.4.0",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@typescript-eslint/parser": "^3.2.0",
+    "babel-jest": "^26.0.1",
     "babel-eslint": "10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react": "^7.20.0",
     "eslint-import-resolver-node": "^0.3.3",
-    "jest": "^25.4.0",
+    "jest": "^26.0.1",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.5"
   },
   "peerDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.19.0"
+    "eslint": "^7.2.0",
+    "eslint-plugin-react": "^7.20.0"
   },
   "dependencies": {
     "change-case": "^4.1.1",
