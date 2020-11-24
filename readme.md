@@ -1,12 +1,10 @@
-# Lean ESLint Plugin Shopify<br/>[![Sponsored by][sponsor-img]][sponsor] [![Version][npm-version-img]][npm] [![Downloads][npm-downloads-img]][npm] [![Build Status Unix][travis-img]][travis] [![Build Status Windows][appveyor-img]][appveyor] [![Dependencies][deps-img]][deps]
+# Lean ESLint Plugin Shopify<br/>[![Sponsored by][sponsor-img]][sponsor] [![Version][npm-version-img]][npm] [![Downloads][npm-downloads-img]][npm] [![Build Status Unix][travis-img]][travis] [![Build Status Windows][appveyor-img]][appveyor]
 
 [sponsor]: https://www.sebastian-software.de
-[deps]: https://david-dm.org/sebastian-software/eslint-plugin-shopify-lean
 [npm]: https://www.npmjs.com/package/eslint-plugin-shopify-lean
 [travis]: https://travis-ci.org/sebastian-software/eslint-plugin-shopify-lean
 [appveyor]: https://ci.appveyor.com/project/swernerx/eslint-plugin-shopify-lean/branch/master
 [sponsor-img]: https://badgen.net/badge/Sponsored%20by/Sebastian%20Software/692446
-[deps-img]: https://badgen.net/david/dep/sebastian-software/eslint-plugin-shopify-lean
 [npm-downloads-img]: https://badgen.net/npm/dm/eslint-plugin-shopify-lean
 [npm-version-img]: https://badgen.net/npm/v/eslint-plugin-shopify-lean
 [travis-img]: https://badgen.net/travis/sebastian-software/eslint-plugin-shopify-lean?label=unix%20build
