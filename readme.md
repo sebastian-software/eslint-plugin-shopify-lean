@@ -14,7 +14,7 @@ A rule-only fork (as of v35.1.0) of [Shopify’s ESLint rules and configs](https
 
 ## Installation
 
-Install `eslint-plugin-shopify`:
+Install `eslint-plugin-shopify-lean`:
 
 **With Yarn**
 ```bash
