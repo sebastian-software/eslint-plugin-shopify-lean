@@ -4,11 +4,12 @@ const rule = require('../../../lib/rules/react-prefer-private-members');
 
 const ruleTester = new RuleTester({
   parser: require.resolve('@typescript-eslint/parser'),
+  settings: {react: {version: 'detect'}},
 });
 
-const babelParser = require.resolve('babel-eslint');
+const babelParser = require.resolve('@babel/eslint-parser');
 
-function makeError({type = 'ClassProperty', memberName, componentName}) {
+function makeError({type = 'PropertyDefinition', memberName, componentName}) {
   return {
     type,
     message: `'${memberName}' should be a private member of '${componentName}'.`,
@@ -45,6 +46,7 @@ ruleTester.run('react-prefer-private-members', rule, {
         constructor() {}
         getChildContext() {}
         getDerivedStateFromProps() {}
+        getDerivedStateFromError() {}
         componentWillMount() {}
         UNSAFE_componentWillMount() {}
         componentDidMount() {}
@@ -112,7 +114,11 @@ ruleTester.run('react-prefer-private-members', rule, {
         render() {}
       }`,
       errors: [
-        makeError({memberName: 'inValid', componentName: 'Button'}),
+        makeError({
+          type: 'PropertyDefinition',
+          memberName: 'inValid',
+          componentName: 'Button',
+        }),
         makeError({
           type: 'MethodDefinition',
           memberName: 'alsoInvalid',

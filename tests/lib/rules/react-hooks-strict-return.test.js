@@ -2,7 +2,9 @@ const {RuleTester} = require('eslint');
 
 const rule = require('../../../lib/rules/react-hooks-strict-return');
 
-const ruleTester = new RuleTester({parser: require.resolve('babel-eslint')});
+const ruleTester = new RuleTester({
+  parser: require.resolve('@babel/eslint-parser'),
+});
 
 const errors = [
   {
@@ -130,6 +132,11 @@ ruleTester.run('react-hooks-strict-return', rule, {
     },
     {
       code: `function useHookUndefinedReturn() {
+        return;
+      }`,
+    },
+    {
+      code: `export default function() {
         return;
       }`,
     },

@@ -4,11 +4,12 @@ const rule = require('../../../lib/rules/react-type-state');
 
 const ruleTester = new RuleTester({
   parser: require.resolve('@typescript-eslint/parser'),
+  settings: {react: {version: 'detect'}},
 });
 
 const errors = [
   {
-    type: 'ClassProperty',
+    type: 'PropertyDefinition',
     message:
       'Add the type of the state instance property so that it matches the second type parameter of your React component.',
   },

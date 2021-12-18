@@ -3,7 +3,16 @@ const {RuleTester} = require('eslint');
 const {fixtureFile} = require('../../utilities');
 const rule = require('../../../lib/rules/jsx-no-hardcoded-content');
 
-const ruleTester = new RuleTester({parser: require.resolve('babel-eslint')});
+const ruleTester = new RuleTester({
+  parser: require.resolve('@babel/eslint-parser'),
+  parserOptions: {
+    babelOptions: {
+      presets: [
+        ['@babel/preset-typescript', {isTSX: true, allExtensions: true}],
+      ],
+    },
+  },
+});
 
 function errorsFor(component, prop) {
   const message =
@@ -224,27 +233,27 @@ ruleTester.run('jsx-no-hardcoded-content', rule, {
         },
       ],
     },
-    // {
-    //   code: `
-    //     import {MyComponent} from 'components';
-    //     <MyComponent>Content</MyComponent>
-    //   `,
-    //   filename: fixtureFile('basic-app/app/sections/MySection/MySection.js'),
-    //   settings: {
-    //     'import/resolver': {
-    //       node: {
-    //         moduleDirectory: [fixtureFile('basic-app/app')],
-    //       },
-    //     },
-    //   },
-    //   options: [
-    //     {
-    //       modules: {
-    //         'app/components': {MyComponent: allowStrings},
-    //       },
-    //     },
-    //   ],
-    // },
+    {
+      code: `
+        import {MyComponent} from 'components';
+        <MyComponent>Content</MyComponent>
+      `,
+      filename: fixtureFile('basic-app/app/sections/MySection/MySection.js'),
+      settings: {
+        'import/resolver': {
+          node: {
+            moduleDirectory: [fixtureFile('basic-app/app')],
+          },
+        },
+      },
+      options: [
+        {
+          modules: {
+            'app/components': {MyComponent: allowStrings},
+          },
+        },
+      ],
+    },
     {
       code: `
         import {MyComponent} from './components';

@@ -1,73 +1,60 @@
 {
-  "name": "eslint-plugin-shopify-lean",
-  "version": "1.1.5",
-  "description": "Trimmed down version of Shopify’s ESLint rules.",
+  "name": "@shopify/eslint-plugin",
+  "version": "41.0.1",
+  "license": "MIT",
+  "description": "Shopify’s ESLint rules and configs.",
   "keywords": [
     "eslint",
+    "eslintconfig",
     "eslintplugin",
+    "eslint-config",
     "eslint-plugin"
   ],
-  "files": [
-    "lib/",
-    "index.js"
-  ],
-  "author": {
-    "name": "Sebastian Software",
-    "email": "s.werner@sebastian-software.de",
-    "url": "https://www.sebastian-software.de"
+  "publishConfig": {
+    "access": "public",
+    "@shopify:registry": "https://registry.npmjs.org"
   },
-  "engines": {
-    "node": ">=10.0.0"
-  },
-  "scripts": {
-    "release": "git push && release-it --ci patch",
-    "release:minor": "git push && release-it --ci minor",
-    "release:major": "git push && release-it --ci major",
-    "check": "yarn run lint && yarn test",
-    "lint": "eslint . --max-warnings 0 --format codeframe",
-    "test": "jest"
-  },
-  "license": "MIT",
-  "babel": {
-    "presets": [
-      "@babel/env"
-    ]
+  "author": "Shopify Inc.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shopify/web-configs.git",
+    "directory": "packages/eslint-plugin"
   },
   "bugs": {
-    "url": "https://github.com/sebastian-software/eslint-plugin-shopify-lean/issues"
+    "url": "https://github.com/Shopify/web-configs/issues"
   },
-  "homepage": "https://github.com/sebastian-software/eslint-plugin-shopify-lean",
-  "repository": "https://github.com/sebastian-software/eslint-plugin-shopify-lean",
-  "jest": {
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/fixtures"
-    ],
-    "collectCoverage": false
-  },
+  "homepage": "https://github.com/Shopify/web-configs/blob/main/packages/eslint-plugin/README.md",
   "devDependencies": {
-    "@babel/core": "^7.12.8",
-    "@babel/preset-env": "^7.12.7",
-    "@typescript-eslint/parser": "^4.8.2",
-    "babel-eslint": "10.1.0",
-    "babel-jest": "^26.6.3",
-    "eslint": "^6.7.2",
-    "eslint-import-resolver-node": "^0.3.4",
-    "eslint-plugin-react": "^7.21.5",
-    "jest": "^26.6.3",
-    "prettier": "^2.2.0",
-    "react": "^17.0.1",
-    "release-it": "^14.2.1",
-    "typescript": "^4.1.2"
+    "graphql": "^14.6.0",
+    "react": "^16.13.1",
+    "typescript": "^3.9.2"
   },
   "peerDependencies": {
-    "eslint": "^7.14.0",
-    "eslint-plugin-react": "^7.21.5"
+    "eslint": "^8.3.0"
   },
   "dependencies": {
-    "change-case": "^4.1.1",
-    "eslint-module-utils": "^2.6.0",
-    "pkg-dir": "5.0.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@babel/eslint-plugin": "^7.14.5",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "change-case": "^4.1.2",
+    "common-tags": "^1.8.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-module-utils": "^2.7.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-graphql": "^4.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^25.3.0",
+    "eslint-plugin-jest-formatting": "^3.1.0",
+    "eslint-plugin-jsx-a11y": "^6.5.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-sort-class-members": "^1.14.0",
+    "jsx-ast-utils": "^3.2.1",
+    "pkg-dir": "^5.0.0",
     "pluralize": "^8.0.0"
   }
 }

@@ -13,6 +13,8 @@ module.exports = {
     'no-namespace-imports': require('./lib/rules/no-namespace-imports'),
     'no-useless-computed-properties': require('./lib/rules/no-useless-computed-properties'),
     'no-fully-static-classes': require('./lib/rules/no-fully-static-classes'),
+    'polaris-prefer-sectioned-prop': require('./lib/rules/polaris-prefer-sectioned-prop'),
+    'polaris-no-bare-stack-item': require('./lib/rules/polaris-no-bare-stack-item'),
     'prefer-class-properties': require('./lib/rules/prefer-class-properties'),
     'prefer-early-return': require('./lib/rules/prefer-early-return'),
     'prefer-module-scope-constants': require('./lib/rules/prefer-module-scope-constants'),
@@ -21,10 +23,35 @@ module.exports = {
     'react-initialize-state': require('./lib/rules/react-initialize-state'),
     'react-no-multiple-render-methods': require('./lib/rules/react-no-multiple-render-methods'),
     'react-prefer-private-members': require('./lib/rules/react-prefer-private-members'),
+    'react-require-autocomplete': require('./lib/rules/react-require-autocomplete'),
     'react-type-state': require('./lib/rules/react-type-state'),
     'restrict-full-import': require('./lib/rules/restrict-full-import'),
+    'sinon-no-restricted-features': require('./lib/rules/sinon-no-restricted-features'),
+    'sinon-prefer-meaningful-assertions': require('./lib/rules/sinon-prefer-meaningful-assertions'),
     'strict-component-boundaries': require('./lib/rules/strict-component-boundaries'),
     'typescript/prefer-pascal-case-enums': require('./lib/rules/typescript/prefer-pascal-case-enums'),
     'typescript/prefer-singular-enums': require('./lib/rules/typescript/prefer-singular-enums'),
+    'typescript/prefer-build-client-schema': require('./lib/rules/typescript/prefer-build-client-schema'),
+    'webpack/no-unnamed-dynamic-imports': require('./lib/rules/webpack/no-unnamed-dynamic-imports'),
+  },
+
+  configs: {
+    // Core configs - When extending, one of these should go first
+    core: require('./lib/config/core'),
+    es5: require('./lib/config/es5'),
+    esnext: require('./lib/config/esnext'),
+    react: require('./lib/config/react'),
+    typescript: require('./lib/config/typescript'),
+    'typescript-type-checking': require('./lib/config/typescript-type-checking'),
+
+    // Augmenting configs - When extending, these go after the core config
+    graphql: require('./lib/config/graphql'),
+    jest: require('./lib/config/jest'),
+    node: require('./lib/config/node'),
+    polaris: require('./lib/config/polaris'),
+    webpack: require('./lib/config/webpack'),
+
+    // Prettier config - When extending, this must go last
+    prettier: require('./lib/config/prettier'),
   },
 };
