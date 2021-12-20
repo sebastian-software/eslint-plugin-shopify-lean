@@ -19,6 +19,9 @@
     "type": "git",
     "url": "https://github.com/sebastian-software/eslint-plugin-shopify-lean.git"
   },
+  "scripts": {
+    "test": "jest"
+  },
   "homepage": "https://github.com/sebastian-software/eslint-plugin-shopify-lean",
   "devDependencies": {
     "@babel/preset-env": "^7.16.5",
