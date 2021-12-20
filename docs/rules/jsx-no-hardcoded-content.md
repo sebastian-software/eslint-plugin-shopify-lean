@@ -114,7 +114,7 @@ Allows you to specify custom validation logic for components in different module
   * For node modules, simply use the name by which you would import it.
   * For local modules, specify the root-relative path of the module (so, for example, `app/components` will set options for anything that imports from `app/components.js`/ `app/components/index.js`, regardless of the relative path used for the import itself)
 
-  Note that this check will also respect any custom resolution logic used for imports specified for [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import). Additionally, this rule will only work for imports components using a named, default, or namespace import, and not when using dynamic imports (`import('@shopify/polaris')`).
+  Note that this check will also respect any custom resolution logic used for imports specified for [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import). Additionally, this rule will only work for imports components using a named, default, or namespace import, and not when using dynamic imports (`import('package-name')`).
 * The value is an object where the keys are names of exported components (use `default` to refer to a default export). The values for this object are objects which have some set of the `allowStrings`, `allowNumbers`, and `checkProps` options detailed above.
 
 By default, no custom overrides are set. If you specify overrides for some components in a module, but not others, unspecified components will get the default options noted above.
