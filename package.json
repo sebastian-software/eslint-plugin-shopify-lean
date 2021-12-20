@@ -25,7 +25,12 @@
   },
   "homepage": "https://github.com/Shopify/web-configs/blob/main/packages/eslint-plugin/README.md",
   "devDependencies": {
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.5",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-plugin-react": "^7.27.1",
     "graphql": "^14.6.0",
+    "jest": "^27.4.5",
     "react": "^16.13.1",
     "typescript": "^3.9.2"
   },
