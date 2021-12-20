@@ -1,8 +1,8 @@
 {
-  "name": "@shopify/eslint-plugin",
-  "version": "41.0.1",
+  "name": "eslint-plugin-shopify-lean",
+  "version": "1.1.5",
   "license": "MIT",
-  "description": "Shopify’s ESLint rules and configs.",
+  "description": "Forked Shopify’s ESLint rules without configs.",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -10,20 +10,16 @@
     "eslint-config",
     "eslint-plugin"
   ],
-  "publishConfig": {
-    "access": "public",
-    "@shopify:registry": "https://registry.npmjs.org"
+  "author": {
+    "name": "Sebastian Werner",
+    "email": "s.werner@sebastian-software.de",
+    "url": "http://sebastian-software.de/werner"
   },
-  "author": "Shopify Inc.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Shopify/web-configs.git",
-    "directory": "packages/eslint-plugin"
+    "url": "https://github.com/sebastian-software/eslint-plugin-shopify-lean.git"
   },
-  "bugs": {
-    "url": "https://github.com/Shopify/web-configs/issues"
-  },
-  "homepage": "https://github.com/Shopify/web-configs/blob/main/packages/eslint-plugin/README.md",
+  "homepage": "https://github.com/sebastian-software/eslint-plugin-shopify-lean",
   "devDependencies": {
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-typescript": "^7.16.5",
