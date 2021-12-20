@@ -43,7 +43,6 @@
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
     "change-case": "^4.1.2",
-    "common-tags": "^1.8.2",
     "eslint-module-utils": "^2.7.1",
     "jsx-ast-utils": "^3.2.1",
     "pkg-dir": "^5.0.0",
