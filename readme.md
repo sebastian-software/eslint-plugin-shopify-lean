@@ -1,8 +1,6 @@
-# `@shopify/eslint-plugin`
+# ESLint Plugin Shopify Lean
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](../../LICENSE.md) [![npm version](https://badge.fury.io/js/%40shopify%2Feslint-plugin.svg)](https://badge.fury.io/js/%40shopify%2Feslint-plugin.svg)
-
-Shopify’s ESLint rules and configs.
+Fork of Shopify’s ESLint rules (only). Excludes all code related to pre-made configurations and their dependencies.
 
 ## Installation
 
@@ -20,108 +18,17 @@ yarn add --dev eslint
 $ npm i eslint --save-dev
 ```
 
-Next, install `@shopify/eslint-plugin`:
+Next, install `eslint-plugin-shopify-lean`:
 
 **With Yarn**
 ```bash
-yarn add --dev @shopify/eslint-plugin
+yarn add --dev eslint-plugin-shopify-lean
 ```
 
 **With npm**
 ```bash
-$ npm install @shopify/eslint-plugin --save-dev
+$ npm install eslint-plugin-shopify-lean --save-dev
 ```
-
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `@shopify/eslint-plugin` globally.
-
-## Usage
-
-Shopify’s ESLint configs come bundled in this package. In order to use them, you simply extend the relevant configuration in your project’s `.eslintrc`. For example, the following will extend the ESNext (ES2015 and later) config:
-
-```json
-{
-  "extends": "plugin:@shopify/esnext"
-}
-```
-
-If you are working on an ES5 project, extend the ES5 version of the configuration:
-
-```json
-{
-  "extends": "plugin:@shopify/es5"
-}
-```
-
-You can also add some "augmenting" configs on top of the "core" config by extending an array of linting configs. For example, the following configuration would provide a base ESNext config that is augmented by a React config:
-
-```json
-{
-  "extends": [
-    "plugin:@shopify/esnext",
-    "plugin:@shopify/react"
-  ]
-}
-```
-
-Likewise, if you are using TypeScript and React, the following configuration extends the TypeScript base config with the React-specific rules provided by the React configuration file. To demonstrate multiple augmentations, we've also added the Prettier config, which disables rules that will conflict in projects using prettier.
-
-```json
-{
-  "extends": [
-    "plugin:@shopify/typescript",
-    "plugin:@shopify/react",
-    "plugin:@shopify/prettier",
-  ]
-}
-```
-
-## Provided configurations
-
-This plugin provides the following core configurations:
-
-- [esnext](lib/config/esnext.js): Use this for anything written with ES2015+ features.
-- [typescript](lib/config/typescript.js): Use this for Typescript projects. The rules enabled in this confige do not require type-checking to run. To enable all Typescript rules, you must augment this config with the `typescript-type-checking` config mentioned below.
-- [es5](lib/config/es5.js): Use this for legacy projects.
-
-This plugin also provides the following tool-specific configurations, which can be used on top of the core configurations:
-
-- [typescript-type-checking](lib/config/typescript-type-checking.js) Use this config to augment the `typescript` config to enable all TypeScript rules, including those that require type checking. These rules are slower to run and and you will need to specify a path to your tsconfig.json file in the "project" property of "parserOptions". The following example would provide all of the TypeScript rules, assuming the tsconfig.json is in the same directory as you ESlint configuration.
-
-```json
-{
-  "extends": [
-    "plugin:@shopify/typescript",
-    "plugin:@shopify/typescript-type-checking"
-  ],
-  "parserOptions": {
-    "project": "tsconfig.json"
-  }
-}
-```
-- [react](lib/config/react.js): Use this for React projects.
-- [graphql](lib/config/graphql.js): Use this for projects that use [graphql-config](https://github.com/prisma/graphql-config) for graphql validation.
-- [polaris](lib/config/polaris.js): Use this for projects that use [Shopify’s React Polaris components](https://polaris.shopify.com/components/get-started).
-- [prettier](lib/config/prettier.js): Use [prettier](https://github.com/prettier/prettier) for consistent formatting. Extending this Shopify's prettier config will [override](https://github.com/prettier/eslint-config-prettier/blob/master/index.js) the default Shopify eslint rules in favor of prettier formatting. Prettier must be installed within your project, as @shopify/eslint-plugin does not provide the dependency itself.
-- [webpack](lib/config/webpack.js): Use this for projects built by [webpack](https://webpack.js.org/).
-
-### node
-
-If you are working on a node module, we also provide the [node configuration](lib/config/node.js) for you. Note that this configuration needs to be used in conjunction with one of the core configurations (either `es5` or `esnext`). If you plan to transpile your code using Babel, use the `esnext` config. If you do not plan to do so, the config you choose depends on the version of node you wish to support, and how many ESNext features are natively available in that version. You can see a detailed list of what version of node supports what new JavaScript features by visiting http://node.green.
-
-A node project that will use Babel for transpilation would need the following ESLint config:
-
-```json
-{
-  "extends": [
-    "plugin:@shopify/esnext",
-    "plugin:@shopify/node"
-  ]
-}
-```
-
-### Supported Typescript version
-
-The supported version of TypeScript is constrained by the [@typescipt-eslint parser support](https://github.com/typescript-eslint/typescript-eslint#supported-typescript-version) that is installed.
 
 ## Plugin-Provided Rules
 
@@ -156,3 +63,10 @@ This plugin provides the following custom rules, which are included as appropria
 - [typescript/prefer-singular-enums](docs/rules/typescript/prefer-singular-enums.md): Prefer TypeScript enums be singular.
 - [typescript/prefer-build-client-schema](docs/rules/typescript/prefer-build-client-schema.md): Prefer buildClientSchema for schema building.
 - [webpack/no-unnamed-dynamic-imports](docs/rules/webpack/no-unnamed-dynamic-imports.md): Require that all dynamic imports contain a `webpackChunkName` comment.
+
+## Copyright
+
+<img src="https://cdn.rawgit.com/sebastian-software/sebastian-software-brand/0d4ec9d6/sebastiansoftware-en.svg" alt="Logo of Sebastian Software GmbH, Mainz, Germany" width="460" height="160"/>
+
+Copyright 2020-present<br/>[Shopify](https://www.shopify.com)
+Copyright 2020-present<br/>[Sebastian Software GmbH](https://www.sebastian-software.de)
