@@ -28,8 +28,12 @@
   },
   "homepage": "https://github.com/sebastian-software/eslint-plugin-shopify-lean",
   "devDependencies": {
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/eslint-plugin": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-typescript": "^7.16.5",
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-plugin-react": "^7.27.1",
     "graphql": "^16.2.0",
@@ -43,10 +47,6 @@
     "eslint": "^8.3.0"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.16.5",
-    "@babel/eslint-plugin": "^7.16.5",
-    "@typescript-eslint/eslint-plugin": "^5.8.0",
-    "@typescript-eslint/parser": "^5.8.0",
     "change-case": "^4.1.2",
     "eslint-module-utils": "^2.7.1",
     "jsx-ast-utils": "^3.2.1",
