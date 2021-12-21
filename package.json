@@ -20,7 +20,8 @@
     "url": "https://github.com/sebastian-software/eslint-plugin-shopify-lean.git"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint lib tests"
   },
   "homepage": "https://github.com/sebastian-software/eslint-plugin-shopify-lean",
   "devDependencies": {
