@@ -1,24 +1,11 @@
 # ESLint Plugin Shopify Lean
 
-Fork of Shopify’s ESLint rules (only). Excludes all code related to pre-made configurations and their dependencies.
+Fork of Shopify’s ESLint rules (only):
+
+- Excludes all code related to pre-made configurations and their dependencies.
+- Fixes a few Windows related issues due to different path separator.
 
 ## Installation
-
-You'll first need to install [ESLint](http://eslint.org):
-
-**With Yarn**
-
-```bash
-yarn add --dev eslint
-```
-
-**With npm**
-
-```bash
-$ npm i eslint --save-dev
-```
-
-Next, install `eslint-plugin-shopify-lean`:
 
 **With Yarn**
 ```bash
