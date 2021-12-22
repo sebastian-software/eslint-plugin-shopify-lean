@@ -30,8 +30,6 @@ This plugin provides the following custom rules, which are included as appropria
 - [jsx-prefer-fragment-wrappers](docs/rules/jsx-prefer-fragment-wrappers.md): Disallow useless wrapping elements in favour of fragment shorthand in JSX.
 - [no-namespace-imports](docs/rules/no-namespace-imports.md): Prevent namespace import declarations.
 - [no-useless-computed-properties](docs/rules/no-useless-computed-properties.md): Prevent the usage of unnecessary computed properties.
-- [polaris-no-bare-stack-item](docs/rules/polaris-no-bare-stack-item.md): Disallow the use of Polaris’s `Stack.Item` without any custom props.
-- [polaris-prefer-sectioned-prop](docs/rules/polaris-prefer-sectioned-prop.md): Prefer the use of the `sectioned` props in Polaris components instead of wrapping all contents in a `Section` component.
 - [prefer-class-properties](docs/rules/prefer-class-properties.md): Prefer class properties to assignment of literals in constructors.
 - [prefer-early-return](docs/rules/prefer-early-return.md): Prefer early returns over full-body conditional wrapping in function declarations.
 - [no-ancestor-directory-import](docs/rules/no-ancestor-directory-import.md): Prefer imports from within a directory extend to the file from where they are importing without relying on an index file.
