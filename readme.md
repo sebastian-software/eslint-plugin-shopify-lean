@@ -1,6 +1,6 @@
 # ESLint Plugin Shopify Lean
 
-Fork of Shopify’s ESLint rules (only):
+Fork of [Shopify’s ESLint rules](https://www.npmjs.com/package/@shopify/eslint-plugin) (only):
 
 - Excludes all code related to pre-made configurations and their dependencies.
 - Fixes a few Windows related issues due to different path separator.
