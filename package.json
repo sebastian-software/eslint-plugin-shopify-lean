@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-shopify-lean",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "license": "MIT",
   "description": "Forked Shopify’s ESLint rules without configs.",
   "keywords": [
